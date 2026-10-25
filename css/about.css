@@ -1,0 +1,82 @@
+/* About page: loads after style.css and reuses its header, buttons, cards, FAQ and footer */
+
+/* Banner */
+.page-banner{position:relative;background:var(--red);color:#fff;padding:170px 0 90px;overflow:hidden}
+.banner-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;animation:kenburns 22s ease-in-out infinite alternate}
+.page-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(142,27,27,.93) 0%,rgba(200,32,31,.75) 55%,rgba(232,80,31,.35) 100%)}
+.page-banner .container{position:relative;z-index:2}
+.page-banner h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;margin:.4rem 0 .6rem;animation:up .8s .1s both}
+.page-banner .lead{max-width:56ch;opacity:1;animation:up .8s .3s both}
+.crumbs{display:flex;gap:.6rem;font-size:.95rem;animation:up .8s both}
+.crumbs a{text-decoration:none;opacity:.85}
+.crumbs a:hover{opacity:1;color:var(--yellow)}
+.crumbs b{color:var(--yellow);font-weight:600}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+
+/* Text blocks */
+.ticks{list-style:none;padding:0;margin:1.2rem 0 0}
+.ticks li{position:relative;padding-left:2rem;margin-bottom:.6rem}
+.ticks li::before{content:"✓";position:absolute;left:0;top:.1rem;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--red);color:#fff;font-size:.8rem;font-weight:700;display:grid;place-items:center}
+.chips{list-style:none;padding:0;margin:1.2rem 0;display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{background:#fff;border:2px solid var(--orange);color:var(--red);font-weight:600;font-size:.88rem;padding:.3rem .9rem;border-radius:99px}
+.section:not(.alt) .chips li{background:var(--sand)}
+
+/* What drives us */
+.drive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.drive{background:#fff;border-radius:var(--radius);padding:2rem 1.7rem;border-top:5px solid var(--orange);transition:transform .25s,box-shadow .25s}
+.drive:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(200,32,31,.16)}
+.drive svg{width:54px;height:54px;fill:none;stroke:var(--red);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:1rem}
+.drive p{margin:0;color:var(--muted)}
+
+/* Journey timeline */
+.timeline-sec{overflow-x:clip}
+.timeline{position:relative;max-width:1060px;margin:0 auto}
+.tl-line{position:absolute;left:50%;top:0;bottom:0;width:4px;margin-left:-2px;background:#ecd2c1;border-radius:2px}
+.tl-fill{position:absolute;left:0;right:0;top:0;height:0;border-radius:2px;background:linear-gradient(var(--orange),var(--red))}
+.t-item{position:relative;width:50%;padding:0 3rem 2.6rem 0}
+.t-item:nth-child(odd){margin-left:50%;padding:0 0 2.6rem 3rem}
+.t-item:last-child{padding-bottom:0}
+.dot{position:absolute;top:2rem;right:-12px;width:24px;height:24px;border-radius:50%;background:var(--yellow);border:4px solid var(--red);transform:scale(0);transition:transform .5s .3s cubic-bezier(.3,1.6,.5,1);z-index:2}
+.t-item:nth-child(odd) .dot{right:auto;left:-12px}
+.t-item.in .dot{transform:scale(1)}
+.t-card{position:relative;background:#fff;border-radius:var(--radius);padding:1.6rem;box-shadow:0 10px 28px rgba(92,16,19,.1);border:1px solid #f0dccd}
+.t-card::before{content:"";position:absolute;top:2.2rem;right:-9px;width:16px;height:16px;background:#fff;border:1px solid #f0dccd;border-width:1px 1px 0 0;transform:rotate(45deg)}
+.t-item:nth-child(odd) .t-card::before{right:auto;left:-9px;transform:rotate(-135deg)}
+.t-head{display:flex;align-items:center;gap:.8rem;margin-bottom:.8rem}
+.year{background:var(--red);color:#fff;font-weight:700;font-size:1.15rem;padding:.3rem 1.1rem;border-radius:99px;border-bottom:3px solid var(--yellow)}
+.tag{color:var(--orange);font-weight:700;font-size:.82rem;letter-spacing:1px;text-transform:uppercase}
+.t-card h3{font-size:1.2rem}
+.t-card p{color:var(--muted);font-size:.96rem}
+.t-card .photo{aspect-ratio:16/9;margin-top:.4rem}
+
+/* Expertise */
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.exp{background:#fff;border-radius:var(--radius);padding:1.7rem;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.exp:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(200,32,31,.16)}
+.exp b{position:absolute;top:.5rem;right:1rem;font-size:3.2rem;line-height:1;color:var(--sand);font-weight:700;transition:color .25s}
+.exp:hover b{color:var(--yellow)}
+.exp h3{font-size:1.1rem;max-width:80%;position:relative}
+.exp p{margin:0;color:var(--muted);font-size:.95rem;position:relative}
+
+/* Why choose us: six items */
+.why-grid.six{grid-template-columns:repeat(3,1fr);gap:2.2rem 2.5rem}
+
+@media (max-width:980px){
+  .drive-grid,.exp-grid,.why-grid.six{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .page-banner{padding:130px 0 60px}
+  .tl-line{left:18px;margin-left:0}
+  .t-item,.t-item:nth-child(odd){width:100%;margin-left:0;padding:0 0 2.2rem 3.2rem}
+  .dot,.t-item:nth-child(odd) .dot{left:7px;right:auto}
+  .t-card::before,.t-item:nth-child(odd) .t-card::before{right:auto;left:-9px;transform:rotate(-135deg)}
+  .js .t-item.reveal.from-left,.js .t-item.reveal.from-right{transform:translateY(24px)}
+  .js .t-item.reveal.from-left.in,.js .t-item.reveal.from-right.in{transform:none}
+}
+@media (max-width:600px){
+  .drive-grid,.exp-grid,.why-grid.six{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  .page-banner::before{animation:none}
+  .dot{transform:scale(1)}
+}

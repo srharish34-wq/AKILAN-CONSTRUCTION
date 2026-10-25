@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Akilan Constructions, Panruti</title>
+<meta name="description" content="Contact Akilan Constructions, Panruti. Call, WhatsApp, email or visit our office at Manadikuppam. Send an enquiry and we will get back to you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo" aria-label="Akilan Constructions home">
+      <img src="images/logo.png" alt="Akilan Constructions logo">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="has-sub">
+          <a href="projects.html" aria-haspopup="true">Projects <span class="caret" aria-hidden="true"></span></a>
+          <ul class="sub">
+            <li><a href="ongoing-projects.html">Ongoing Projects</a></li>
+            <li><a href="completed-projects.html">Completed Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+      <a href="tel:+919629856936" class="btn btn-yellow nav-call">Call 96298 56936</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- BANNER -->
+<section class="page-banner">
+  <img class="banner-bg" src="images/contact-banner.jpg" alt="" aria-hidden="true">
+  <span class="fl f1" aria-hidden="true"></span><span class="fl f2" aria-hidden="true"></span><span class="fl f3" aria-hidden="true"></span>
+  <div class="container">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><b>Contact Us</b></nav>
+    <h1>Let's talk about your building</h1>
+    <p class="lead">Call, message or visit us. Tell us about your plot and we will arrange a free site visit.</p>
+  </div>
+</section>
+<!-- QUICK CONTACT CARDS -->
+<section class="qc-wrap">
+  <div class="container qc-grid">
+    <a class="qc reveal" href="tel:+919629856936">
+      <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 4h5l2 6-3 2c1.500 3 4 5.500 7 7l2-3 6 2v5a2 2 0 0 1-2 2C14 25 5 16 5 6a2 2 0 0 1 2-2z"/></svg></span>
+      <h3>Call us</h3><p>96298 56936<br>94894 15136</p><span class="go">Call now</span>
+    </a>
+    <a class="qc reveal" href="https://wa.me/919629856936" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 28l2-7a12 12 0 1 1 5 5z"/><path d="M12 12c0 4 4 8 8 8l2-2-3-2-1 1c-1-.5-3-2-3.500-3.500l1-1-2-3z"/></svg></span>
+      <h3>WhatsApp</h3><p>Chat with us for a quick reply</p><span class="go">Start chat</span>
+    </a>
+    <a class="qc reveal" href="mailto:akilanconstructions1@gmail.com">
+      <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="6" width="26" height="20" rx="3"/><path d="m4 9 12 9 12-9"/></svg></span>
+      <h3>Email</h3><p class="brk">akilanconstructions1@gmail.com</p><span class="go">Write to us</span>
+    </a>
+    <a class="qc reveal" href="#map">
+      <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29s9-8 9-15a9 9 0 0 0-18 0c0 7 9 15 9 15z"/><circle cx="16" cy="14" r="3"/></svg></span>
+      <h3>Visit us</h3><p>Manadikuppam, Panruti, Cuddalore district</p><span class="go">See the map</span>
+    </a>
+  </div>
+</section>
+
+<!-- FORM + DETAILS -->
+<section class="section" id="enquiry">
+  <div class="container contact-grid">
+    <div class="form-card reveal">
+      <h2>Send us an enquiry</h2>
+      <p>Fill in your details. When you press send, WhatsApp opens with your message ready to go to our team.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="cName">Your name</label><input type="text" id="cName" name="name" autocomplete="name" placeholder="Full name"><small class="err-t"></small></div>
+          <div class="field"><label for="cPhone">Mobile number</label><input type="tel" id="cPhone" name="phone" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number"><small class="err-t"></small></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="cEmail">Email (optional)</label><input type="email" id="cEmail" name="email" autocomplete="email" placeholder="you@example.com"><small class="err-t"></small></div>
+          <div class="field"><label for="cLoc">Plot location (optional)</label><input type="text" id="cLoc" name="loc" placeholder="Town or village"><small class="err-t"></small></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="cService">What do you need?</label>
+            <select id="cService" name="service">
+              <option>New house construction</option><option>Commercial building</option><option>School or hospital building</option>
+              <option>Plan and approval drawings</option><option>Elevation or Vastu plan</option><option>Interior and exterior design</option>
+              <option>Structural design or supervision</option><option>Renovation</option><option>Valuation</option>
+              <option>Housing loan help</option><option>Government (DRDA) work</option><option>Something else</option>
+            </select></div>
+          <div class="field"><label for="cTime">Best time to call</label>
+            <select id="cTime" name="time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+        </div>
+        <div class="field"><label for="cMsg">Message (optional)</label><textarea id="cMsg" name="msg" rows="4" maxlength="300" placeholder="Tell us about your plot, size or budget"></textarea><small class="count-t" id="msgCount">0 / 300</small></div>
+        <button type="submit" class="btn btn-red btn-send"><span>Send on WhatsApp</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.500 21 3l-8.500 18-2-7.500z"/></svg></button>
+      </form>
+
+      <div class="done" id="done" hidden>
+        <svg viewBox="0 0 80 80" class="tick" aria-hidden="true"><circle cx="40" cy="40" r="34"/><path d="m26 41 10 10 19-21"/></svg>
+        <h3>Thank you! Your message is ready.</h3>
+        <p>WhatsApp should have opened with your details. Press send there and we will call you back soon.</p>
+        <p class="small">WhatsApp did not open? <a id="waFallback" href="#" target="_blank" rel="noopener">Tap here to open it</a>.</p>
+        <button type="button" class="btn btn-ghost-dark" id="again">Send another enquiry</button>
+      </div>
+    </div>
+
+    <aside class="info-panel reveal">
+      <h2>Our office</h2>
+      <ul class="info-list">
+        <li><b>Address</b><span>No. 512, Indira Gandhi Salai, Manadikuppam, Vallam Post, Panruti Taluk, Cuddalore District, Tamil Nadu 607 805</span></li>
+        <li><b>Mobile</b><span><a href="tel:+919629856936">96298 56936</a><br><a href="tel:+919489415136">94894 15136</a></span></li>
+        <li><b>Office</b><span><a href="tel:04142251136">04142 251 136</a></span></li>
+        <li><b>Design desk (Er. R. Anbu)</b><span><a href="tel:+917550385290">75503 85290</a></span></li>
+        <li><b>Email</b><span><a href="mailto:akilanconstructions1@gmail.com">akilanconstructions1@gmail.com</a> <button type="button" class="copy-btn" data-copy="akilanconstructions1@gmail.com">Copy</button></span></li>
+      </ul>
+      <p class="tagline">Er. R. Arul, DCE., BE<br>Licensed Civil Engineer, DRDA Govt Contractor</p>
+    </aside>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-sec alt" id="map">
+  <div class="container reveal">
+    <div class="map-wrap">
+      <!-- For the exact pin: Google Maps > Share > Embed a map > copy the src value into the iframe below -->
+      <iframe title="Akilan Constructions location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Manadikuppam,+Panruti,+Tamil+Nadu+607805&amp;output=embed"></iframe>
+      <div class="map-card">
+        <h3>Akilan Constructions</h3>
+        <p>No. 512, Indira Gandhi Salai, Manadikuppam, Vallam Post, Panruti Taluk, Cuddalore District 607 805</p>
+        <a class="btn btn-red" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Manadikuppam+Panruti+Tamil+Nadu+607805">Get directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><h2>What happens after you contact us</h2></div>
+    <div class="next-grid">
+      <div class="next reveal"><span>1</span><h3>You get in touch</h3><p>Send the form, call us or message on WhatsApp with a few details about your plot.</p></div>
+      <div class="next reveal"><span>2</span><h3>We call you back</h3><p>Our team talks through your needs, budget and timeline, and answers your questions.</p></div>
+      <div class="next reveal"><span>3</span><h3>Free site visit</h3><p>An engineer visits your plot and then shares a plan and quote with no obligation.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><p class="f-brand">Akilan Constructions</p><p>Building construction and consulting, Panruti, Cuddalore district.</p></div>
+    <div><h4>Visit us</h4><address>No. 512, Indira Gandhi Salai, Manadikuppam, Vallam Post, Panruti Taluk, Cuddalore District, Tamil Nadu 607 805</address></div>
+    <div><h4>Contact</h4><p><a href="tel:+919629856936">96298 56936</a><br><a href="tel:+919489415136">94894 15136</a><br>Office: <a href="tel:04142251136">04142 251 136</a><br>Design desk: <a href="tel:+917550385290">75503 85290</a></p><p><a href="mailto:akilanconstructions1@gmail.com">akilanconstructions1@gmail.com</a></p></div>
+    <div><h4>Pages</h4><p><a href="about.html">About Us</a><br><a href="services.html">Services</a><br><a href="ongoing-projects.html">Ongoing Projects</a><br><a href="completed-projects.html">Completed Projects</a><br><a href="contact.html">Contact Us</a></p></div>
+  </div>
+  <p class="copy">© <span id="year">2026</span> Akilan Constructions. All rights reserved.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+<a href="https://wa.me/919629856936" class="wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="#fff" d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 23.6c-2 0-3.900-.6-5.500-1.600l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.600 10.600 0 1 1 16 26.600zm5.800-7.900c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7 0a8.600 8.600 0 0 1-4.300-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.400 3.400 14.600 14.600 0 0 0 5.600 4.900c2.100.9 2.900.9 3.400.8a2.900 2.900 0 0 0 1.900-1.300 2.400 2.400 0 0 0 .2-1.300c-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+<button class="to-top" aria-label="Back to top">↑</button>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="modal" id="enquiryModal" role="dialog" aria-modal="true" aria-label="Enquiry form" hidden>
+  <div class="modal-box enq"><button type="button" class="modal-x" data-close aria-label="Close">×</button>
+    <div id="enqFormWrap">
+      <h3>Planning to build? Get a free site visit</h3>
+      <p>Share your details and the chat continues on WhatsApp.</p>
+      <form id="enqForm" novalidate>
+        <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Mobile number<input name="phone" type="tel" required inputmode="tel" autocomplete="tel"></label>
+        <label>What do you need?<select name="need"><option>New house construction</option><option>Commercial building</option><option>School or hospital building</option><option>Plan and approval drawings</option><option>Renovation</option><option>Housing loan help</option><option>Other</option></select></label>
+        <label>Message (optional)<textarea name="msg" rows="2"></textarea></label>
+        <p class="err" id="enqErr" role="alert"></p>
+        <button class="btn btn-red" type="submit">Send on WhatsApp</button>
+      </form>
+    </div>
+    <div id="enqDone" hidden><h3>Thank you!</h3><p>WhatsApp should have opened with your message. Press send there and we will call you back soon.</p></div>
+  </div>
+</div>
+
+<script>/* On this page the form is already here, so skip the 30-second popup */try{sessionStorage.setItem("enqSent","1")}catch(e){}</script>
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
