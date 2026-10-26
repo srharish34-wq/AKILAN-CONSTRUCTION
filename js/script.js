@@ -1,6 +1,6 @@
 /* ---- Construction packages: edit prices and specs here ---- */
 const PACKAGES = [
-  { name: 'Standard Package', price: '2,499', pick: false, rows: {
+  { name: 'Standard Package', price: '2,299', pick: false, rows: {
     'Project Management': 'Engineer supervision, weekly progress updates and material checks.',
     'Structure': 'RCC framed structure with TMT steel and standard walling.',
     'Bathroom & Plumbing': 'Standard CP fittings and white sanitaryware, concealed plumbing.',
@@ -9,7 +9,7 @@ const PACKAGES = [
     'Door, Windows and Railing': 'Wood or engineered main door, aluminium windows, MS railing.',
     'Painting': 'Putty with primer, and emulsion paint inside and out.',
     'Electrical': 'Concealed copper wiring with modular switches and MCB box.' } },
-  { name: 'Premium Package', price: '2,749', pick: true, rows: {
+  { name: 'Premium Package', price: '2,599', pick: true, rows: {
     'Project Management': 'Engineer supervision, weekly updates and stage-wise quality checks.',
     'Structure': 'RCC framed structure with branded steel and cement.',
     'Bathroom & Plumbing': 'Branded CP fittings and sanitaryware, wall-hung closets.',
@@ -18,7 +18,7 @@ const PACKAGES = [
     'Door, Windows and Railing': 'Teak-finish main door, UPVC windows, SS or glass railing.',
     'Painting': 'Putty, primer and premium emulsion with a smooth finish.',
     'Electrical': 'Branded wiring and modular switches with extra points.' } },
-  { name: 'Ultra Luxury', price: '3,499', pick: false, rows: {
+  { name: 'Ultra Luxury', price: '3,299', pick: false, rows: {
     'Project Management': 'Dedicated engineer, fortnightly review meetings and a full quality log.',
     'Structure': 'RCC structure with top-grade steel, plus waterproofing treatments.',
     'Bathroom & Plumbing': 'Premium fittings, rain showers and designer sanitaryware.',
